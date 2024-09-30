@@ -6,10 +6,10 @@ use function PHPUnit\Framework\throwException;
 
 class Library
 {
-    public $books = [];
-    public $maxBooks;
+    public array $books = [];
+    public int $maxBooks;
 
-    public function __construct($maxBooks)
+    public function __construct(int $maxBooks)
     {
         $this->maxBooks = $maxBooks;
     }
