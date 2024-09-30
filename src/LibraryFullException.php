@@ -2,4 +2,4 @@
 
 namespace Lesha9494\Exceptions;
 
-class LibraryFullException {}
+class LibraryFullException extends \Exception {}
