@@ -12,7 +12,7 @@ use Lesha9494\Exceptions\LibraryFullException;
 
 class LibraryTest extends TestCase
 {
-    public function testAddDublicateBook()
+    public function testAddDublicateBook(): void
     {
         $this->expectException(BookAlreadyExistsException::class);
 
@@ -22,7 +22,7 @@ class LibraryTest extends TestCase
         $library->addBook($book);
     }
 
-    public function testAddFullLibrary()
+    public function testAddFullLibrary(): void
     {
         $this->expectException(LibraryFullException::class);
         $library = new Library(1);
